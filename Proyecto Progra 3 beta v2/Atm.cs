@@ -25,6 +25,8 @@ namespace Proyecto_Progra_3_beta_v2
             banco3 = b3;
             bancoU = banU;
             comboBox1.SelectedIndex = 0;
+            pictureBox8.Image= img;
+
         }
         public void Inicio()
         {
@@ -33,7 +35,6 @@ namespace Proyecto_Progra_3_beta_v2
             transBan.Visible = false;
             depositobancario.Visible = false;
             retiBan.Visible = false;            
-            textBox1.Text = "";
             textBox2.Text = "";
             textBox3.Text = "";
             textBox4.Text = "";
