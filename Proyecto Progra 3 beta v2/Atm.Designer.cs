@@ -80,6 +80,12 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.pictureBox13 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -93,6 +99,11 @@
             this.transBan.SuspendLayout();
             this.depositobancario.SuspendLayout();
             this.retiBan.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             this.SuspendLayout();
             // 
             // button10
@@ -102,8 +113,9 @@
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(55, 55);
             this.button10.TabIndex = 78;
-            this.button10.Text = "Exit";
+            this.button10.Text = "Atras";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -114,6 +126,7 @@
             this.button11.TabIndex = 77;
             this.button11.Text = "0";
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button12
             // 
@@ -135,6 +148,7 @@
             this.button7.TabIndex = 75;
             this.button7.Text = "9";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -145,6 +159,7 @@
             this.button8.TabIndex = 74;
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -155,6 +170,7 @@
             this.button9.TabIndex = 73;
             this.button9.Text = "7";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button4
             // 
@@ -165,6 +181,7 @@
             this.button4.TabIndex = 72;
             this.button4.Text = "6";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -175,6 +192,7 @@
             this.button5.TabIndex = 71;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -185,6 +203,7 @@
             this.button6.TabIndex = 70;
             this.button6.Text = "4";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button3
             // 
@@ -195,6 +214,7 @@
             this.button3.TabIndex = 69;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -205,6 +225,7 @@
             this.button2.TabIndex = 68;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -215,6 +236,7 @@
             this.button1.TabIndex = 67;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -225,11 +247,10 @@
             this.label1.Size = new System.Drawing.Size(145, 21);
             this.label1.TabIndex = 65;
             this.label1.Text = "Ingrese su trajeta";
-            this.label1.Visible = false;
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.SeaGreen;
+            this.textBox1.BackColor = System.Drawing.Color.DarkSlateGray;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Location = new System.Drawing.Point(629, 88);
             this.textBox1.Name = "textBox1";
@@ -250,8 +271,6 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.BackgroundImage = global::Proyecto_Progra_3_beta_v2.Properties.Resources.banco_ganadero;
-            this.pictureBox8.Image = global::Proyecto_Progra_3_beta_v2.Properties.Resources.banco_ganadero;
             this.pictureBox8.Location = new System.Drawing.Point(621, 136);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(130, 47);
@@ -279,7 +298,7 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.SeaGreen;
+            this.pictureBox5.BackColor = System.Drawing.Color.DarkSlateGray;
             this.pictureBox5.Location = new System.Drawing.Point(593, 87);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(190, 17);
@@ -624,11 +643,77 @@
             this.label9.TabIndex = 3;
             this.label9.Text = "RETIRO BANCARIO";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.RoyalBlue;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.Location = new System.Drawing.Point(10, 8);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(348, 21);
+            this.label11.TabIndex = 86;
+            this.label11.Text = "Simulador ATM, cajero funcinando........100%";
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox9.Location = new System.Drawing.Point(0, 447);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(800, 3);
+            this.pictureBox9.TabIndex = 87;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox10.Location = new System.Drawing.Point(797, 0);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(3, 450);
+            this.pictureBox10.TabIndex = 88;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox11.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(800, 3);
+            this.pictureBox11.TabIndex = 89;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox12.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(3, 450);
+            this.pictureBox12.TabIndex = 90;
+            this.pictureBox12.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            this.pictureBox13.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox13.Location = new System.Drawing.Point(0, 32);
+            this.pictureBox13.Name = "pictureBox13";
+            this.pictureBox13.Size = new System.Drawing.Size(800, 3);
+            this.pictureBox13.TabIndex = 91;
+            this.pictureBox13.TabStop = false;
+            // 
             // Atm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBox13);
+            this.Controls.Add(this.pictureBox12);
+            this.Controls.Add(this.pictureBox11);
+            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.pictureBox9);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.button10);
@@ -679,6 +764,11 @@
             this.depositobancario.PerformLayout();
             this.retiBan.ResumeLayout(false);
             this.retiBan.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -738,5 +828,11 @@
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button aceptar;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox pictureBox13;
     }
 }

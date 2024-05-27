@@ -79,7 +79,7 @@ namespace Proyecto_Progra_3_beta_v2
         }
         public void Llenar()
         {
-            Usuario us1 = new Usuario(1001, "javier", "cruz", "contraseña1");
+            Usuario us1 = new Usuario(1001, "javier", "cruz", "12345678");
             Usuario us2 = new Usuario(1002, "maria", "lopez", "contraseña2");
             Usuario us3 = new Usuario(1003, "luis", "garcia", "contraseña3");
             Usuario us4 = new Usuario(1004, "ana", "martinez", "contraseña4");

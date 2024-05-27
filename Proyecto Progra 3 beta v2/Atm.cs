@@ -16,6 +16,7 @@ namespace Proyecto_Progra_3_beta_v2
         private Banco banco1, banco2, banco3, bancoU;
         private Usuario usario;
         private bool verificado;
+        private int posTexbox;
         public Atm(Banco b1, Banco b2, Banco b3, Banco banU, Image img, Color c1, Color c2)
         {
             InitializeComponent();
@@ -26,7 +27,15 @@ namespace Proyecto_Progra_3_beta_v2
             bancoU = banU;
             comboBox1.SelectedIndex = 0;
             pictureBox8.Image= img;
-
+            pictureBox1.BackColor = c2;
+            BackColor = c1;
+            label11.BackColor = c2;
+            inicioSesion.BackColor = Color.White;
+            menu.BackColor = Color.White;
+            transBan.BackColor = Color.White;
+            depositobancario.BackColor = Color.White;
+            retiBan.BackColor = Color.White;
+            posTexbox = 0;
         }
         public void Inicio()
         {
@@ -64,8 +73,10 @@ namespace Proyecto_Progra_3_beta_v2
         {
             if (verificado)
             {
+                posTexbox++;
             }
             else {
+                posTexbox++;
                 InicioDeSesion();
             }
         }
@@ -152,10 +163,6 @@ namespace Proyecto_Progra_3_beta_v2
                 MessageBox.Show("Se agrego " + deposito + " a su cuenta");
                 Inicio();
             }
-            else
-            {
-                MessageBox.Show("llene los espacios");
-            }
         }
 
         private void button20_Click(object sender, EventArgs e)
@@ -192,12 +199,92 @@ namespace Proyecto_Progra_3_beta_v2
         {
             menu.Visible= false;
             depositobancario.Visible= true;
+            posTexbox = 4;
         }
 
         private void retiro_Click(object sender, EventArgs e)
         {
             menu.Visible = false;
             retiBan.Visible= true;
+            posTexbox = 5;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Rellenar("1");         
+        }
+        private void Rellenar(string letra) {
+            switch (posTexbox) {
+                case 0:
+                    inicioSesion.Visible= true;
+                    textBox1.Text = textBox1.Text + letra;
+                    break;
+                case 1:
+                    textBox2.Text = textBox2.Text + letra;
+                    break;
+                case 2:
+                    textBox3.Text = textBox3.Text + letra;
+                    break;
+                case 3:
+                    textBox4.Text = textBox4.Text + letra;
+                    break;
+                case 4:
+                    textBox5.Text = textBox5.Text + letra;
+                    break;
+                case 5:
+                    textBox6.Text = textBox6.Text + letra;
+                    break;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Rellenar("2");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Rellenar("3");
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Rellenar("4");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Rellenar("5");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Rellenar("6");
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Rellenar("7");
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Rellenar("8");
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Rellenar("9");
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Rellenar("0");
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            posTexbox--;
         }
 
         public void InicioDeSesion()
@@ -213,6 +300,8 @@ namespace Proyecto_Progra_3_beta_v2
                     {
                         inicioSesion.Visible = false;
                         menu.Visible = true;
+                        posTexbox = 2;
+                        verificado = true;
                     }
                     else
                     {
@@ -224,10 +313,7 @@ namespace Proyecto_Progra_3_beta_v2
                     MessageBox.Show("Usuario no encontrado");
                 }
             }
-            else
-            {
-                MessageBox.Show("llene los espacios");
-            }
+            
         }
         private void Atm_Load(object sender, EventArgs e)
         {
