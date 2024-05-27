@@ -25,6 +25,8 @@ namespace Proyecto_Progra_3_beta_v2
             Usuario us2 = Buscar(id2);
             us2.Depositar(cantidad);
             total = total + cantidad;
+            DateTime dtToday = DateTime.Now;//guarda fecha y hora
+            Lista("" + dtToday);
             Lista("Se hizo un deposito a la cuenta :" + id2);
             Lista("se deposito la cantidad de " + cantidad);
             Lista("total actual de la cuenta :" + us2.Saldo);
@@ -33,9 +35,11 @@ namespace Proyecto_Progra_3_beta_v2
         public bool Transaccion(int id1, double cantidad)
         {
             Usuario us1 = Buscar(id1);
-            if (us1.transferir(cantidad))
+            if (us1.transferir(cantidad))//tienes sufiente saldo?
             {
                 total = total - cantidad;
+                DateTime dtToday = DateTime.Now;//guarda fecha y hora
+                Lista("" + dtToday);
                 Lista("Se hizo una transaccion de la cuenta :" + id1);
                 Lista("se envio una cantidad de :" + cantidad);
                 Lista("total actual de la cuenta :" + us1.Saldo);
@@ -47,8 +51,8 @@ namespace Proyecto_Progra_3_beta_v2
                 return false;
             }
         }
-        public Usuario Buscar(int id)
-        {
+        public Usuario Buscar(int id)//busca el id y da el usario con ese id
+        {// de lo contrario da usuario vacio
             int i = 0;
             Usuario usuario = null;
             bool encontrado = false;
@@ -68,9 +72,9 @@ namespace Proyecto_Progra_3_beta_v2
             bool res = false;
             for (int i = 0; i < usuarios.Length; i++)
             {
-                if (usuarios[i] == null)
+                if (usuarios[i] == null)//lugar vacio
                 {
-                    if (!Repetido(nuevo.getId()))
+                    if (!Repetido(nuevo.getId()))//usuario no repetido
                     {
                         usuarios[i] = nuevo;
                         total = total + usuarios[i].Saldo;
@@ -87,7 +91,7 @@ namespace Proyecto_Progra_3_beta_v2
         {
             return usuarios;
         }
-        public bool Repetido(int id)
+        public bool Repetido(int id)//si el id ya esta usado en la lista de usuarios
         {
             int i = 0;
             bool encontrado = false;
@@ -108,7 +112,7 @@ namespace Proyecto_Progra_3_beta_v2
         }
         public void Lista(string linea)
         {
-            historial.Add(linea);
+            historial.Add(linea);//añade a historial
         }
         public ArrayList Lista()
         {
@@ -117,9 +121,11 @@ namespace Proyecto_Progra_3_beta_v2
         public bool Retiro(int id1, double cantidad)
         {
             Usuario us1 = Buscar(id1);
-            if (us1.Retiro(cantidad))
+            if (us1.Retiro(cantidad))//tienes sufiente saldo?
             {
                 total = total - cantidad;
+                DateTime dtToday = DateTime.Now;//guarda fecha y hora
+                Lista("" + dtToday);
                 Lista("Se hizo un retiro de la cuenta :" + id1);
                 Lista("se retiro una cantidad de :" + cantidad);
                 Lista("total actual de la cuenta :" + us1.Saldo);

@@ -21,7 +21,7 @@ namespace Proyecto_Progra_3_beta_v2
         public Form1()
         {
             InitializeComponent();
-            panel3.Visible = false;
+            banco.Visible = false;
             mercantil = new Banco(20, "Banco Mercantil");
             union = new Banco(20, "Banco Union");
             ganadero = new Banco(20, "Banco Ganadero");
@@ -34,34 +34,18 @@ namespace Proyecto_Progra_3_beta_v2
 
         }
 
-        public void Rellenar(Banco banco)
+        public void Rellenar(Banco banco)//rellena la ventana con el banco selecionado
         {
             label3.Text = banco.GetNombre();
             label6.Text = banco.getTotal + " Bs";
-            dataGridView1.Rows.Clear();
-            for (int i = 0; i < banco.GetUsuarios().Length; i++)
-            {
-                int n = dataGridView1.Rows.Add();
-                if (banco.GetUsuarios()[i] != null)
-                {
-                    dataGridView1.Rows[n].Cells[0].Value = banco.GetUsuarios()[i].getId();
-                    dataGridView1.Rows[n].Cells[1].Value = banco.GetUsuarios()[i].Nombre;
-                    dataGridView1.Rows[n].Cells[2].Value = banco.GetUsuarios()[i].Apellido;
-                    dataGridView1.Rows[n].Cells[3].Value = banco.GetUsuarios()[i].Saldo;
-                }
-            }
-            listBox1.Items.Clear();
-            foreach (string linea in banco.Lista())
-            {
-                listBox1.Items.Add(linea);
-            }
+            Actualizar(banco);
         }
-        public void Actualizar(Banco banco)
+        public void Actualizar(Banco banco)//actualiza el grid, nombre, total y historial de la ventana banco
         {
-            dataGridView1.Rows.Clear();
+            dataGridView1.Rows.Clear();//vacia el datagrid
             for (int i = 0; i < banco.GetUsuarios().Length; i++)
             {
-                int n = dataGridView1.Rows.Add();
+                int n = dataGridView1.Rows.Add();//da la posicion del grid para guardar
                 if (banco.GetUsuarios()[i] != null)
                 {
                     dataGridView1.Rows[n].Cells[0].Value = banco.GetUsuarios()[i].getId();
@@ -70,11 +54,11 @@ namespace Proyecto_Progra_3_beta_v2
                     dataGridView1.Rows[n].Cells[3].Value = banco.GetUsuarios()[i].Saldo;
                 }
             }
-            label6.Text = banco.getTotal + " Bs";
-            listBox1.Items.Clear();
+            label6.Text = banco.getTotal + " Bs";//carga el dinero total del banco
+            listBox1.Items.Clear();//basia el historial
             foreach (string linea in banco.Lista())
             {
-                listBox1.Items.Add(linea);
+                listBox1.Items.Add(linea);//llena el historial con datos actualizados
             }
         }
         public void Llenar()
@@ -267,52 +251,61 @@ namespace Proyecto_Progra_3_beta_v2
             ganadero.AgregarUsuario(us180);
             ganadero.AgregarUsuario(us190);
             ganadero.AgregarUsuario(us200);
-        }
+        }//crea los usuarios y los agregar a los bancos
 
-        private void button4_Click_1(object sender, EventArgs e)
+        private void button4_Click_1(object sender, EventArgs e)//boton de cerrar ventana
         {
             Close();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)//boton banco ganadero
         {
-            panel3.Visible = true;
-            panel3.BackColor = Color.FromArgb(32, 177, 68);
+            this.banco.Visible = true;
+            #region color de la ventana
+            this.banco.BackColor = Color.FromArgb(32, 177, 68);//color de la ventana
+            //color del datagrid
             dataGridView1.RowsDefaultCellStyle.BackColor = Color.FromArgb(39, 219, 84);
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(39, 219, 84);
             dataGridView1.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(39, 219, 84);
+            #endregion
             Banco banco = ganadero;
-            Rellenar(banco);
+            Rellenar(banco);//rellena color nombre datos del banco ganadero
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            panel3.Visible = true;
-            panel3.BackColor = Color.FromArgb(91, 199, 216);
+            this.banco.Visible = true;
+            #region color de la ventana
+            this.banco.BackColor = Color.FromArgb(91, 199, 216);//color de la ventana
+            //color del datagrid
             dataGridView1.RowsDefaultCellStyle.BackColor = Color.FromArgb(29, 167, 182);
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(29, 167, 182);
             dataGridView1.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(29, 167, 182);
+            #endregion
             Banco banco = union;
-            Rellenar(banco);
+            Rellenar(banco);//rellena color nombre datos del banco union
         }
 
         private void button3_Click_1(object sender, EventArgs e)
         {
-            panel3.Visible = true;
-            panel3.BackColor = Color.FromArgb(12, 117, 56);
+            this.banco.Visible = true;
+            #region color de la ventana
+            this.banco.BackColor = Color.FromArgb(12, 117, 56);//color de la ventana
+            //color del datagrid
             dataGridView1.RowsDefaultCellStyle.BackColor = Color.FromArgb(23, 225, 106);
             dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(23, 225, 106);
             dataGridView1.RowHeadersDefaultCellStyle.BackColor = Color.FromArgb(23, 225, 106);
+            #endregion
             Banco banco = mercantil;
-            Rellenar(banco);
+            Rellenar(banco);//rellena color nombre datos del banco mercantil
         }
 
         private void button5_Click_1(object sender, EventArgs e)
         {
-
+            //boton tigo money
         }
 
-        private void button6_Click_1(object sender, EventArgs e)
+        private void button6_Click_1(object sender, EventArgs e)//crear cajero automatico
         {
             if (label3.Text == "Banco Ganadero")
             {
@@ -327,10 +320,11 @@ namespace Proyecto_Progra_3_beta_v2
                 cajero = new Atm(ganadero, union, mercantil, mercantil, Proyecto_Progra_3_beta_v2.Properties.Resources.Banco_Mercantil_Logo__2_, Color.FromArgb(12, 117, 56), Color.FromArgb(23, 225, 106));
             }
             cajero.ShowDialog();
+            //se cierra la ventana y actualiza los datos para el grid y historial
             Actualizar(cajero.GetBanco());
         }
 
-        private void button7_Click_1(object sender, EventArgs e)
+        private void button7_Click_1(object sender, EventArgs e)//crea la ventana App
         {
             if (label3.Text == "Banco Ganadero")
             {
@@ -345,12 +339,14 @@ namespace Proyecto_Progra_3_beta_v2
                 aplicacion = new App(ganadero, union, mercantil, mercantil);
             }
             aplicacion.ShowDialog();
+            //se cierra la ventana y actualiza los datos para el grid y historial
             Actualizar(aplicacion.GetBanco());
         }
 
         private void button8_Click_1(object sender, EventArgs e)
         {
-            panel3.Visible = false;
+            banco.Visible = false;//se hace no visible la ventana banco y muestro el inicio
+            //el logo de UPDS y titulo
         }
     }
 

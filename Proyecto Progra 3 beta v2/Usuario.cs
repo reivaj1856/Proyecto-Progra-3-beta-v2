@@ -43,8 +43,7 @@ namespace Proyecto_Progra_3_beta_v2
         public void Depositar(double sumar)
         {
             saldo = saldo + sumar;
-            DateTime dtToday = DateTime.Now;
-            Console.WriteLine(dtToday);
+            DateTime dtToday = DateTime.Now;//guardar fecha y hora
             Lista("" + dtToday);
             Lista("Se hizo un deposito de " + sumar);
             Lista("total saldo en la cuenta " + saldo);
@@ -55,8 +54,7 @@ namespace Proyecto_Progra_3_beta_v2
             if (saldo >= restar)
             {
                 saldo = saldo - restar;
-                DateTime dtToday = DateTime.Now;
-                Console.WriteLine(dtToday);
+                DateTime dtToday = DateTime.Now;//guardar fecha y hora
                 Lista("" + dtToday);
                 Lista("Se hizo una transferencia de " + restar);
                 Lista("total saldo en la cuenta " + saldo);
@@ -79,7 +77,7 @@ namespace Proyecto_Progra_3_beta_v2
         }
         public void Lista(string linea)
         {
-            historial.Add(linea);
+            historial.Add(linea);//añade al historial
         }
         public ArrayList Lista()
         {
@@ -87,11 +85,10 @@ namespace Proyecto_Progra_3_beta_v2
         }
         public bool Retiro(double cantidad)
         {
-            if (saldo >= cantidad)
+            if (saldo >= cantidad)//tienes suficiente saldo?
             {
                 saldo = saldo - cantidad;
-                DateTime dtToday = DateTime.Now;
-                Console.WriteLine(dtToday);
+                DateTime dtToday = DateTime.Now;//guarda fecha y hora
                 Lista("" + dtToday);
                 Lista("Se hizo un retiro de " + cantidad);
                 Lista("total saldo en la cuenta " + saldo);
