@@ -30,6 +30,7 @@
         {
             this.label13 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -71,11 +72,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -83,7 +84,6 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -108,6 +108,15 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(287, 35);
             this.panel7.TabIndex = 25;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(286, 3);
+            this.pictureBox2.TabIndex = 29;
+            this.pictureBox2.TabStop = false;
             // 
             // label12
             // 
@@ -175,6 +184,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 1;
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // textBox1
             // 
@@ -182,6 +192,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // panel1
             // 
@@ -350,6 +361,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 1;
+            this.textBox6.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox6_KeyPress);
             // 
             // label11
             // 
@@ -398,6 +410,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 7;
+            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
             // 
             // label6
             // 
@@ -479,6 +492,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 2;
+            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
             // 
             // label4
             // 
@@ -495,6 +509,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 0;
+            this.textBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // pictureBox1
             // 
@@ -504,15 +519,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(286, 3);
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(286, 3);
-            this.pictureBox2.TabIndex = 29;
-            this.pictureBox2.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -561,6 +567,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -573,7 +580,6 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

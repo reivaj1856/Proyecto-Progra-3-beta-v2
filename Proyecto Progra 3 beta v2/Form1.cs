@@ -63,26 +63,27 @@ namespace Proyecto_Progra_3_beta_v2
         }
         public void Llenar()
         {
-            Usuario us1 = new Usuario(1001, "javier", "cruz", "12345678");
-            Usuario us2 = new Usuario(1002, "maria", "lopez", "contraseña2");
-            Usuario us3 = new Usuario(1003, "luis", "garcia", "contraseña3");
-            Usuario us4 = new Usuario(1004, "ana", "martinez", "contraseña4");
-            Usuario us5 = new Usuario(1005, "carlos", "fernandez", "contraseña5");
-            Usuario us6 = new Usuario(1006, "elena", "gomez", "contraseña6");
-            Usuario us7 = new Usuario(1007, "jorge", "diaz", "contraseña7");
-            Usuario us8 = new Usuario(1008, "laura", "sanchez", "contraseña8");
-            Usuario us9 = new Usuario(1009, "pablo", "rodriguez", "contraseña9");
-            Usuario us10 = new Usuario(1010, "lucia", "perez", "contraseña10");
-            Usuario us11 = new Usuario(1011, "andres", "romero", "contraseña11");
-            Usuario us12 = new Usuario(1012, "paula", "torres", "contraseña12");
-            Usuario us13 = new Usuario(1013, "ricardo", "ramirez", "contraseña13");
-            Usuario us14 = new Usuario(1014, "sara", "flores", "contraseña14");
-            Usuario us15 = new Usuario(1015, "alejandro", "vazquez", "contraseña15");
-            Usuario us16 = new Usuario(1016, "marta", "muñoz", "contraseña16");
-            Usuario us17 = new Usuario(1017, "victor", "alvarez", "contraseña17");
-            Usuario us18 = new Usuario(1018, "rosa", "moreno", "contraseña18");
-            Usuario us19 = new Usuario(1019, "fernando", "soto", "contraseña19");
-            Usuario us20 = new Usuario(1020, "alicia", "ibañez", "contraseña20");
+            Usuario us1 = new Usuario(1001, "juan", "cruz", "123456");
+            Usuario us2 = new Usuario(1002, "sofia", "lopez", "234567");
+            Usuario us3 = new Usuario(1003, "pedro", "garcia", "345678");
+            Usuario us4 = new Usuario(1004, "carla", "martinez", "456789");
+            Usuario us5 = new Usuario(1005, "manuel", "fernandez", "567890");
+            Usuario us6 = new Usuario(1006, "luz", "gomez", "678901");
+            Usuario us7 = new Usuario(1007, "daniel", "diaz", "789012");
+            Usuario us8 = new Usuario(1008, "isabel", "sanchez", "890123");
+            Usuario us9 = new Usuario(1009, "antonio", "rodriguez", "901234");
+            Usuario us10 = new Usuario(1010, "carmen", "perez", "123450");
+            Usuario us11 = new Usuario(1011, "miguel", "romero", "234561");
+            Usuario us12 = new Usuario(1012, "angela", "torres", "345672");
+            Usuario us13 = new Usuario(1013, "diego", "ramirez", "456783");
+            Usuario us14 = new Usuario(1014, "laura", "flores", "567894");
+            Usuario us15 = new Usuario(1015, "pablo", "vazquez", "678905");
+            Usuario us16 = new Usuario(1016, "monica", "muñoz", "789016");
+            Usuario us17 = new Usuario(1017, "oscar", "alvarez", "890127");
+            Usuario us18 = new Usuario(1018, "patricia", "moreno", "901238");
+            Usuario us19 = new Usuario(1019, "sergio", "soto", "123489");
+            Usuario us20 = new Usuario(1020, "elena", "ibañez", "234590");
+
 
             us1.Depositar(1500);
             us2.Depositar(2000);
@@ -126,26 +127,28 @@ namespace Proyecto_Progra_3_beta_v2
             mercantil.AgregarUsuario(us18);
             mercantil.AgregarUsuario(us19);
             mercantil.AgregarUsuario(us20);
-            Usuario us01 = new Usuario(1001, "javier", "cruz", "contraseña1");
-            Usuario us02 = new Usuario(1002, "maria", "lopez", "contraseña2");
-            Usuario us03 = new Usuario(1003, "luis", "garcia", "contraseña3");
-            Usuario us04 = new Usuario(1004, "ana", "martinez", "contraseña4");
-            Usuario us05 = new Usuario(1005, "carlos", "fernandez", "contraseña5");
-            Usuario us06 = new Usuario(1006, "elena", "gomez", "contraseña6");
-            Usuario us07 = new Usuario(1007, "jorge", "diaz", "contraseña7");
-            Usuario us08 = new Usuario(1008, "laura", "sanchez", "contraseña8");
-            Usuario us09 = new Usuario(1009, "pablo", "rodriguez", "contraseña9");
-            Usuario us010 = new Usuario(1010, "lucia", "perez", "contraseña10");
-            Usuario us011 = new Usuario(1011, "andres", "romero", "contraseña11");
-            Usuario us012 = new Usuario(1012, "paula", "torres", "contraseña12");
-            Usuario us013 = new Usuario(1013, "ricardo", "ramirez", "contraseña13");
-            Usuario us014 = new Usuario(1014, "sara", "flores", "contraseña14");
-            Usuario us015 = new Usuario(1015, "alejandro", "vazquez", "contraseña15");
-            Usuario us016 = new Usuario(1016, "marta", "muñoz", "contraseña16");
-            Usuario us017 = new Usuario(1017, "victor", "alvarez", "contraseña17");
-            Usuario us018 = new Usuario(1018, "rosa", "moreno", "contraseña18");
-            Usuario us019 = new Usuario(1019, "fernando", "soto", "contraseña19");
-            Usuario us020 = new Usuario(1020, "alicia", "ibañez", "contraseña20");
+
+            Usuario us01 = new Usuario(1001, "adrian", "nieto", "567890");
+            Usuario us02 = new Usuario(1002, "valeria", "dominguez", "678901");
+            Usuario us03 = new Usuario(1003, "ramon", "gimenez", "789012");
+            Usuario us04 = new Usuario(1004, "clara", "reyes", "890123");
+            Usuario us05 = new Usuario(1005, "alberto", "mendoza", "901234");
+            Usuario us06 = new Usuario(1006, "gloria", "navarro", "012345");
+            Usuario us07 = new Usuario(1007, "sergio", "martin", "123456");
+            Usuario us08 = new Usuario(1008, "camila", "ramos", "234567");
+            Usuario us09 = new Usuario(1009, "eduardo", "gil", "345678");
+            Usuario us010 = new Usuario(1010, "ines", "vera", "456789");
+            Usuario us011 = new Usuario(1011, "rafael", "benitez", "567890");
+            Usuario us012 = new Usuario(1012, "veronica", "santos", "678901");
+            Usuario us013 = new Usuario(1013, "julian", "ortega", "789012");
+            Usuario us014 = new Usuario(1014, "noelia", "arias", "890123");
+            Usuario us015 = new Usuario(1015, "ivan", "iglesias", "901234");
+            Usuario us016 = new Usuario(1016, "lidia", "cabrera", "012345");
+            Usuario us017 = new Usuario(1017, "marcos", "pastor", "123456");
+            Usuario us018 = new Usuario(1018, "nuria", "sierra", "234567");
+            Usuario us019 = new Usuario(1019, "hector", "campos", "345678");
+            Usuario us020 = new Usuario(1020, "silvia", "vega", "456789");
+
 
             us01.Depositar(1500);
             us02.Depositar(2000);
@@ -189,26 +192,27 @@ namespace Proyecto_Progra_3_beta_v2
             union.AgregarUsuario(us019);
             union.AgregarUsuario(us020);
 
-            Usuario us30 = new Usuario(1001, "javier", "cruz", "contraseña1");
-            Usuario us31 = new Usuario(1002, "maria", "lopez", "contraseña2");
-            Usuario us32 = new Usuario(1003, "luis", "garcia", "contraseña3");
-            Usuario us40 = new Usuario(1004, "ana", "martinez", "contraseña4");
-            Usuario us50 = new Usuario(1005, "carlos", "fernandez", "contraseña5");
-            Usuario us60 = new Usuario(1006, "elena", "gomez", "contraseña6");
-            Usuario us70 = new Usuario(1007, "jorge", "diaz", "contraseña7");
-            Usuario us80 = new Usuario(1008, "laura", "sanchez", "contraseña8");
-            Usuario us90 = new Usuario(1009, "pablo", "rodriguez", "contraseña9");
-            Usuario us100 = new Usuario(1010, "lucia", "perez", "contraseña10");
-            Usuario us110 = new Usuario(1011, "andres", "romero", "contraseña11");
-            Usuario us120 = new Usuario(1012, "paula", "torres", "contraseña12");
-            Usuario us130 = new Usuario(1013, "ricardo", "ramirez", "contraseña13");
-            Usuario us140 = new Usuario(1014, "sara", "flores", "contraseña14");
-            Usuario us150 = new Usuario(1015, "alejandro", "vazquez", "contraseña15");
-            Usuario us160 = new Usuario(1016, "marta", "muñoz", "contraseña16");
-            Usuario us170 = new Usuario(1017, "victor", "alvarez", "contraseña17");
-            Usuario us180 = new Usuario(1018, "rosa", "moreno", "contraseña18");
-            Usuario us190 = new Usuario(1019, "fernando", "soto", "contraseña19");
-            Usuario us200 = new Usuario(1020, "alicia", "ibañez", "contraseña20");
+            Usuario us30 = new Usuario(1001, "alejandro", "perez", "987654");
+            Usuario us31 = new Usuario(1002, "daniela", "martinez", "876543");
+            Usuario us32 = new Usuario(1003, "sebastian", "soto", "765432");
+            Usuario us40 = new Usuario(1004, "luz", "gomez", "654321");
+            Usuario us50 = new Usuario(1005, "roberto", "torres", "543210");
+            Usuario us60 = new Usuario(1006, "fernanda", "castro", "432109");
+            Usuario us70 = new Usuario(1007, "alvaro", "romero", "321098");
+            Usuario us80 = new Usuario(1008, "sofia", "garcia", "210987");
+            Usuario us90 = new Usuario(1009, "martin", "lopez", "109876");
+            Usuario us100 = new Usuario(1010, "julieta", "morales", "098765");
+            Usuario us110 = new Usuario(1011, "gabriel", "rojas", "987654");
+            Usuario us120 = new Usuario(1012, "maria", "fernandez", "876543");
+            Usuario us130 = new Usuario(1013, "nicolas", "alvarez", "765432");
+            Usuario us140 = new Usuario(1014, "carla", "muñoz", "654321");
+            Usuario us150 = new Usuario(1015, "esteban", "vargas", "543210");
+            Usuario us160 = new Usuario(1016, "valentina", "mendoza", "432109");
+            Usuario us170 = new Usuario(1017, "hugo", "vera", "321098");
+            Usuario us180 = new Usuario(1018, "adriana", "ramirez", "210987");
+            Usuario us190 = new Usuario(1019, "manuel", "benitez", "109876");
+            Usuario us200 = new Usuario(1020, "lucia", "dominguez", "098765");
+
 
             us30.Depositar(1500);
             us31.Depositar(2000);
@@ -303,6 +307,7 @@ namespace Proyecto_Progra_3_beta_v2
         private void button5_Click_1(object sender, EventArgs e)
         {
             //boton tigo money
+            System.Diagnostics.Process.Start("https://tigomoney.com/bo/home-bo");
         }
 
         private void button6_Click_1(object sender, EventArgs e)//crear cajero automatico

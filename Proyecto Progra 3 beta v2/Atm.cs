@@ -198,6 +198,7 @@ namespace Proyecto_Progra_3_beta_v2
             {
                 Transferir(banco3);//cuenta del beneficiado del banco mercantil
             }
+            posTexbox =7;
         }
         public void Transferir(Banco beneficiado)
         {
@@ -241,6 +242,7 @@ namespace Proyecto_Progra_3_beta_v2
         private void aceptaa_Click(object sender, EventArgs e)
         {
             Deposito();
+            posTexbox = 7;
         }
         private void Deposito()
         {
@@ -251,12 +253,17 @@ namespace Proyecto_Progra_3_beta_v2
                 MessageBox.Show("Se agrego " + deposito + " a su cuenta");
                 Inicio();
             }
+            else
+            {
+                MessageBox.Show("llene los espacios");
+            }
         }
         #endregion
         #region ventanaRetiro
         private void aceptar_Click(object sender, EventArgs e)
         {
             Retiro();
+            posTexbox = 7;
         }
         private void Retiro()
         {
