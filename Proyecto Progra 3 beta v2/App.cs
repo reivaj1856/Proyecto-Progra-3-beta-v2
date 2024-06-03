@@ -205,6 +205,67 @@ namespace Proyecto_Progra_3_beta_v2
             panel6.Visible = true;// ventana de deposito
         }
 
+        #region verificarSoloNumeros
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar < 47 || e.KeyChar > 58)
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten numeros");
+                return;
+            }
+        }
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar < 47 || e.KeyChar > 58)
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten numeros");
+                return;
+            }
+        }
+        private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar < 47 || e.KeyChar > 58)
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten numeros");
+                return;
+            }
+        }
+        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar < 47 || e.KeyChar > 58)
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten numeros");
+                return;
+            }
+        }
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar < 47 || e.KeyChar > 58)
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten numeros");
+                return;
+            }
+        }
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar < 47 || e.KeyChar > 58)
+            {
+                e.Handled = true;
+                MessageBox.Show("Solo se permiten numeros");
+                return;
+            }
+        }
+        #endregion
+
+
+
+
+
         private void button13_Click(object sender, EventArgs e)
         {
             Close();//boton de cerrar ventana App

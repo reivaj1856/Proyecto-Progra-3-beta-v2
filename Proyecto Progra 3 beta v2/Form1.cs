@@ -303,6 +303,7 @@ namespace Proyecto_Progra_3_beta_v2
         private void button5_Click_1(object sender, EventArgs e)
         {
             //boton tigo money
+            System.Diagnostics.Process.Start("https://tigomoney.com/bo/home-bo");
         }
 
         private void button6_Click_1(object sender, EventArgs e)//crear cajero automatico
